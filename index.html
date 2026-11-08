@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dark Souls Tasks</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="container">
+    <h1>Dark Souls Tasks</h1>
+
+    <form id="task-form">
+      <input id="task-input" type="text" placeholder="What needs to get done?" required />
+
+
+      <select id="category-input" name="category" required>
+        <option value="" selected disabled>--Please choose--</option>
+        <option value="Goals">Goals</option>
+        <option value="Items">Items</option>
+        <option value="Trophies">Trophies</option>
+      </select>
+
+      <button type="submit">Add Task</button>
+    </form>
+
+    <div id="task-list"></div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
